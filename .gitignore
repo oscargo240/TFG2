@@ -1,0 +1,44 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+*.make
+*.cmake
+*.txt
+*.internal
+*.log
+*.ts
+*.bin
+*.marks
+build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c
+build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
+build/CMakeFiles/cmake.check_cache
