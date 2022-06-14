@@ -15,7 +15,7 @@
 
 using namespace std;
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv) {    
     auto skSelected = SelectedSequence::instance().getSelectedCRC();
     NCDHelper& ncdHelper = NCDHelper::instance();
     NCDSortedEntryList sortedList;
