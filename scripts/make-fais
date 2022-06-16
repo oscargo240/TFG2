@@ -3,13 +3,13 @@
 set -e
 
 function remove_fais {
-	for i in $(find $TOPDATADIR/Test1/Adenoviridae -name \*.fasta.fai) ; do
+	for i in $(find /home/oscargo2/repos/ncd-covid-data -name \*.fasta.fai) ; do
 		rm -f $i
 	done
 }
 
 function make_all_fais {
-	for i in $(find $TOPDATADIR/Test1/Adenoviridae -name \*.fasta) ; do
+	for i in $(find /home/oscargo2/repos/ncd-covid-data -name \*.fasta) ; do
 		test -f $i.fai || fastahack -i $i
 	done
 }
@@ -18,10 +18,10 @@ source $(dirname $0)/../config/env.sh
 
 cd $TOPDATADIR
 
-SUMMARY_NAME=$TOPDATADIR/Test1/Adenoviridae/Adenoviridae_15.fasta
-#echo "Original input data:" > $SUMMARY_NAME
+SUMMARY_NAME=$TOPDATADIR/summaries/summary-01-input-data.txt
+echo "Original input data:" > $SUMMARY_NAME
 #ls -lh incoming/*.zip incoming/*.fasta >> $SUMMARY_NAME
-GISAID_SEQ_COUNT=$(cat $TOPDATADIR/Test1/Adenoviridae/*.fasta | wc -l)
+#GISAID_SEQ_COUNT=$(cat $TOPDATADIR/Test1/Adenoviridae/*.fasta | wc -l)
 #GURJIT_SEQ_FAI=$(find $TOPDATADIR/incoming/gur* -name \*.fasta.fai)
 #GURJIT_SEQ_COUNT=$(cat $GURJIT_SEQ_FAI | wc -l)
 echo "GISAID sequences downloaded July 17th, 2020" >> $SUMMARY_NAME
