@@ -2,7 +2,7 @@
 
 # produces a Newick format tree given a maketree generated dot format tree
 # looks for a label "humanMito" to use as root
-TREEFILE='/home/rudi/var/covid-exp/intermediate/treefile.dot'
+TREEFILE='/home/oscargo2/repos/ncd-covid-data/intermediate/treefile.dot'
 
 def doDFS(labels, neighbors, fromWhere, doneNodes)
 	cur = fromWhere
@@ -26,7 +26,7 @@ def doDFS(labels, neighbors, fromWhere, doneNodes)
 	end
 	return str
 end
-Dir.chdir('/home/rudi/var/covid-exp/intermediate')
+Dir.chdir('/home/oscargo2/repos/ncd-covid-data/intermediate')
 file = File.open(TREEFILE, "r");
 lines = file.readlines
 labels = { }
