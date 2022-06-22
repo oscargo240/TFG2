@@ -18,7 +18,7 @@ int main(int argc, char **argv)
     rocksdb::DB *db = 0;
     rocksdb::Options options;
     options.create_if_missing = true;
-    options.error_if_exists = true;
+    options.error_if_exists = false;
     cerr << "About to open db\n";
     auto dbFilename = getDataFilename("db/rawseq");
     std::map<std::string, std::string> done;
