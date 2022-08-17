@@ -33,9 +33,13 @@ uint32_t SequenceCompressor::getCompressedSizeSingle(const std::string &crc)
 uint32_t SequenceCompressor::getCompressedSizePair(const std::string &crc1, const std::string &crc2)
 {
     string tag = TaggedSequenceCombinationHelper::formPairTag(crc1, crc2);
+    string tagInv = TaggedSequenceCombinationHelper::formPairTag(crc2, crc1);
     if (CachingCompressor::instance().hasTag(tag))
     {
         return CachingCompressor::instance().getTagSizeFast(tag);
+    }else if(CachingCompressor::instance().hasTag(tagInv))
+    {
+        return CachingCompressor::instance().getTagSizeFast(tagInv);
     }
     TaggedSequenceCombination combo = TaggedSequenceCombinationHelper::formPair(crc1, crc2);
     uint32_t csize = CachingCompressor::instance().getTaggedCompressedSize(combo);

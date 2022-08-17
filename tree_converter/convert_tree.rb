@@ -2,7 +2,7 @@
 
 # produces a Newick format tree given a maketree generated dot format tree
 # looks for a label "humanMito" to use as root
-TREEFILE='/home/oscargo2/repos/ncd-covid-data/intermediate/treefile.dot'
+TREEFILE='/home/oscargo2/repos/ncd-covid-data/datosgisaideurope/intermediate/treefile.dot'
 
 def doDFS(labels, neighbors, fromWhere, doneNodes)
 	cur = fromWhere
@@ -37,7 +37,7 @@ lines.each { |line|
 	if line =~ /^(\d+)\s+\[label="([^"]*)"/
 		num = $1.to_i
 		label = $2.to_s
-		if label.size > 0 && num < 120
+		if label.size > 0 && num < 501
 #			puts "label #{num} = #{label}"
 			labels[num] = label
 			if label == "humanMito"

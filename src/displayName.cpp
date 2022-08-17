@@ -17,7 +17,8 @@ static std::string smartNameGurjit(const NameAndCRC& nameAndCRC) {
     auto filenameParts = split(bigFilename, '/');
     auto lastFilename = filenameParts[filenameParts.size()-1];
     auto goodFilename = split(lastFilename, '.')[0];
-    return accession + "_" + goodFilename;
+    cout<<accession<<endl;
+    return accession;
 }
 
 static std::string smartNameGisaid(const NameAndCRC& nameAndCRC) {

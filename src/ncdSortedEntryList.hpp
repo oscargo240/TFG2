@@ -14,6 +14,7 @@ public:
     void addEntry(const NameAndCRC& nameAndCRC);
     const std::vector<EntryAndNCD>& getSortedList(void);
     const std::vector<EntryAndNCD> getTruncatedSortedList(uint32_t howMany);
+    const std::vector<EntryAndNCD> getLinspacedList(uint32_t howMany);
 };
 
 #endif

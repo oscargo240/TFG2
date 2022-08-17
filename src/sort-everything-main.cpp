@@ -32,6 +32,7 @@ int main(int argc, char **argv) {
     int retainedGisaidCount = 0;
     double retainedGisaidSum = 0.0f;
     // CachingCompressor::instance().removeTag("15428970192809444366/15292229339988812524");
+    //primer for: busca la secuencia de referencia y las de MN908947 y las mete
     for (auto it = snh.nameToCRC.begin(); it != snh.nameToCRC.end(); ++it) {
         auto k = (*it).first;
         auto crc = (*it).second;
@@ -47,6 +48,9 @@ int main(int argc, char **argv) {
             donelist.insert(crc);
         }
     }
+    //segundo for: mete todos los virus menos los COVID
+    auto fname = getDataFilename("summaries/seq_and_dist.txt");
+    auto o = ofstream(fname);
     for (auto it = snh.nameToCRC.begin(); it != snh.nameToCRC.end(); ++it) {
         auto k = (*it).first;
         auto crc = (*it).second;
@@ -57,9 +61,12 @@ int main(int argc, char **argv) {
         NameAndCRC nameAndCRC;
         nameAndCRC.name = k;
         nameAndCRC.crc = crc;
-        cout << k << '\n';
-        cout << crc << ',' << ncd << ',' << smartName(nameAndCRC) << '\n';
+        o << k << '\n';
+        o << crc << ',' << ncd << ',' << smartName(nameAndCRC) << '\n';
         if (nameAndCRC.name.find("hCoV") == string::npos) {
+            sortedList.addEntry(nameAndCRC);
+            donelist.insert(crc);
+        }else{//si no pongo esto se carga los covid
             sortedList.addEntry(nameAndCRC);
             donelist.insert(crc);
         }
@@ -97,6 +104,9 @@ int main(int argc, char **argv) {
     outfile.close();
     filename = getDataFilename("intermediate/table-60-sorted.txt");
     outfile = ofstream(filename);
+
+
+
     for (auto entry : sortedList.getTruncatedSortedList(60)) {
         outfile << entry.ncd << '&' << smartName(entry.entry) << "\\\\\n";
     }

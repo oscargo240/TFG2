@@ -3,13 +3,13 @@
 set -e
 
 function remove_fais {
-	for i in $(find /home/oscargo2/repos/ncd-covid-data -name \*.fasta.fai) ; do
+	for i in $(find /home/oscargo2/repos/ncd-covid-data/datosgisaideurope -name \*.fasta.fai) ; do
 		rm -f $i
 	done
 }
 
 function make_all_fais {
-	for i in $(find /home/oscargo2/repos/ncd-covid-data -name \*.fasta) ; do
+	for i in $(find /home/oscargo2/repos/ncd-covid-data/datosgisaideurope -name \*.fasta) ; do
 		test -f $i.fai || fastahack -i $i
 	done
 }
