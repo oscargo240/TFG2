@@ -16,7 +16,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    const int experiment_size = 500;
+    const int experiment_size = 50;
     auto skSelected = SelectedSequence::instance().getSelectedCRC();
     NCDHelper &ncdHelper = NCDHelper::instance();
     set<string> donelist;
@@ -65,7 +65,7 @@ int main(int argc, char **argv)
     }
     cout<<"segundo bucle"<<endl;
 
-    auto elist = sortedList.getLinspacedList(experiment_size);
+    auto elist = sortedList.getTruncatedSortedList(experiment_size);
     EntryAndNCD human;
     human.entry = humanNameAndCRC;
     const clock_t begin_time = clock();
@@ -82,6 +82,6 @@ int main(int argc, char **argv)
     distMatrixWriter.writeDistanceMatrix(distMatrixName);
     cerr << "Wrote " << distMatrixName << '\n';
     TreeMaker::makeTreeFile(distMatrixName, "firsttree.newick");
-    TreeMaker::makeDiagramTree("firsttree.newick", "firsttree.ps");
+    //TreeMaker::makeDiagramTree("firsttree.newick", "firsttree.ps");
     return 0;
 }
