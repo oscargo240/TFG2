@@ -47,15 +47,15 @@ def main():
     with open(sys.argv[2], 'w') as f:
         f.write("#mega\n")
         f.write("!Title: Concatenated Files;" + "\n")
-        f.write("!Format DataType=Distance DataFormat=LowerLeft NTaxa="+ str(ncols-1) + "\n")
+        f.write("!Format DataType=Distance DataFormat=LowerLeft NTaxa="+ str(ncols-1) + ";\n")
         f.write("!Description" + "\n")
-        f.write("No. of Taxa : 20" + "\n")
-        f.write("No. of Groups : " + str(ncols-1) + "\n")
-        f.write("Gaps/Missing data : Pairwise Deletion" + "\n")
-        f.write("Codon Positions : 1st+2nd+3nd+Noncoding" + "\n")
-        f.write("Distance method : Nucleotide: Tamura-Nei  [Pairwise distances]" + "\n")
-        f.write("No. of Sites : 1369989" + "\n")
-        f.write("d : Estimate" + "\n")
+        f.write("  No. of Taxa : 20" + "\n")
+        f.write("  No. of Groups : " + str(ncols-1) + "\n")
+        f.write("  Gaps/Missing data : Pairwise Deletion" + "\n")
+        f.write("  Codon Positions : 1st+2nd+3nd+Noncoding" + "\n")
+        f.write("  Distance method : Nucleotide: Tamura-Nei  [Pairwise distances]" + "\n")
+        f.write("  No. of Sites : 1369989" + "\n")
+        f.write("  d : Estimate" + "\n")
         f.write(";\n")
         f.write("\n")
 
@@ -77,7 +77,7 @@ def main():
     #print to the same file the matrix with the number of the row first
     with open(sys.argv[2], 'a') as f:
         for i in range(0,lower.shape[0]):
-            f.write("["+ str(i+1)    +"] #")
+            f.write("["+ str(i+1)    +"] ")
             for j in range(0,lower.shape[1]):
                 f.write(str(lower[i,j]) + " ")
             f.write("\n")
