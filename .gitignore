@@ -33,7 +33,7 @@
 
 *.make
 *.cmake
-*.txt
+link.txt
 *.internal
 *.log
 *.ts
@@ -43,3 +43,4 @@ build/CMakeFiles/3.22.1/CompilerIdC/CMakeCCompilerId.c
 build/CMakeFiles/3.22.1/CompilerIdCXX/CMakeCXXCompilerId.cpp
 build/CMakeFiles/cmake.check_cache
 *.kekw
+tests/testsaugur/testgisaideu/RAxML_log.2e8521
