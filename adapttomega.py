@@ -79,7 +79,8 @@ def main():
         for i in range(0,lower.shape[0]):
             f.write("["+ str(i+1)    +"] ")
             for j in range(0,lower.shape[1]):
-                f.write(str(lower[i,j]) + " ")
+                if lower[i,j]!=0.0:
+                    f.write(str(lower[i,j]) + " ")
             f.write("\n")
 
 main()
