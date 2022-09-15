@@ -4,7 +4,7 @@
 std::string getDataDir(void) {
     const char *top = getenv("TOPDATADIR");
     if (top == 0 || strlen(top) == 0)
-        return "/home/oscargo2/repos/ncd-covid-data/monkeypox";
+        return "/home/oscargo2/repos/ncd-covid-data/datosgisaideurope";
     return top;
 }
 

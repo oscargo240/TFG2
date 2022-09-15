@@ -68,6 +68,7 @@ const std::vector<EntryAndNCD> NCDSortedEntryList::getLinspacedList(uint32_t how
     if (howMany >= entries.size()) {
         return entries;
     }
+    printf("%d\n", entries.size());
     std::vector<double> linspaced = linspace(0, int(entries.size() - 1), howMany);
     std::vector<EntryAndNCD> result;
     for (auto i = linspaced.begin(); i != linspaced.end(); ++i) {
