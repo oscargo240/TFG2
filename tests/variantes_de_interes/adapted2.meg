@@ -11,33 +11,33 @@
   d : Estimate
 ;
 
-[1] #Vari___hCoV__19___Mexico___NAY_INER_IMSS_1923___2021
-[2] #Vari___hCoV__19___Panama___GMI__PASEQ419___2021
-[3] #Vari___hCoV__19___England___QEUH__EF458A___2021
-[4] #Vari___hCoV__19___Netherlands___GR__RIVM__21206___2020
-[5] #Vari___hCoV__19___India___KA__INSACOG_JNC_330___2022
-[6] #Vari___hCoV__19___USA___TX__HHD__2102127067___2021
-[7] #Vari___hCoV__19___Mexico___CMX_INER_IMSS_00909___2021
-[8] #Vari___hCoV__19___Iran___Ahvaz__NIC__S9___2021
-[9] #Vari___hCoV__19___Wales___CAMC__AEAEEA___2020
-[10] #Vari___hCoV__19___HongKong___CM22001848___2022
-[11] #Vari___hCoV__19___Singapore___908___2021
-[12] #Vari___hCoV__19___USA___WV__CDC__QDX21487805___2021
-[13] #Vari___hCoV__19___Sweden___1935738672___2021
-[14] #Vari___hCoV__19___Netherlands___NH__RIVM__21256___2020
-[15] #Vari___hCoV__19___Aruba___AW__RIVM__30308___2021
-[16] #Vari___hCoV__19___USA___CA__SEARCH__11645___2021
-[17] #Vari___hCoV__19___Palau___PW__H2210830___2022
-[18] #Vari___hCoV__19___Bahrain___510157700___2021
+[1] #hCoV-19/Mexico/NAY_INER_IMSS_1923/2021
+[2] #hCoV-19/Panama/GMI-PASEQ419/2021
+[3] #hCoV-19/England/QEUH-EF458A/2021
+[4] #hCoV-19/Netherlands/GR-RIVM-21206/2020
+[5] #hCoV-19/India/KA-INSACOG_JNC_330/2022
+[6] #hCoV-19/USA/TX-HHD-2102127067/2021
+[7] #hCoV-19/Mexico/CMX_INER_IMSS_00909/2021
+[8] #hCoV-19/Iran/Ahvaz-NIC-S9/2021
+[9] #hCoV-19/Wales/CAMC-AEAEEA/2020
+[10] #hCoV-19/HongKong/CM22001848/2022
+[11] #hCoV-19/Singapore/908/2021
+[12] #hCoV-19/USA/WV-CDC-QDX21487805/2021
+[13] #hCoV-19/Sweden/1935738672/2021
+[14] #hCoV-19/Netherlands/NH-RIVM-21256/2020
+[15] #hCoV-19/Aruba/AW-RIVM-30308/2021
+[16] #hCoV-19/USA/CA-SEARCH-11645/2021
+[17] #hCoV-19/Palau/PW-H2210830/2022
+[18] #hCoV-19/Bahrain/510157700/2021
 [19] #MN908947.3_alt._SARS_CoV_2
-[20] #Vari___hCoV__19___Australia___NSW1045___2020
-[21] #Vari___hCoV__19___Chile___LI__93379___2021
+[20] #hCoV-19/Australia/NSW1045/2020
+[21] #hCoV-19/Chile/LI-93379/2021
 [22] #humanMito
-[23] #Vari___hCoV__19___NewZealand___22CH5362___2022
-[24] #Vari___hCoV__19___Germany___BB__RKI__I__033696___2021
-[25] #Vari___hCoV__19___SouthKorea___KDCA4648___2021
-[26] #Vari___hCoV__19___India___un__LNHD8___2021
-[27] #Vari___hCoV__19___Australia___NSW870___2020
+[23] #hCoV-19/NewZealand/22CH5362/2022
+[24] #hCoV-19/Germany/BB-RKI-I-033696/2021
+[25] #hCoV-19/SouthKorea/KDCA4648/2021
+[26] #hCoV-19/India/un-LNHD8/2021
+[27] #hCoV-19/Australia/NSW870/2020
 
 
 [  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  ]
