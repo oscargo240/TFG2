@@ -71,7 +71,8 @@ int main(int argc, char **argv)
 
     }
     cout<<"segundo bucle"<<endl;
-    auto elist = sortedList.getLinspacedList(experiment_size);
+    //auto elist = sortedList.getLinspacedList(experiment_size);
+    auto elist = sortedList.getTruncatedSortedList(1);
     cout<<elist.size()<<endl;
     for (auto it = snh.nameToCRC.begin(); it != snh.nameToCRC.end(); ++it)
     {
